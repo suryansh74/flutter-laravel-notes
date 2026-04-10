@@ -1,0 +1,50 @@
+name: notes_app
+description: "A simple notes app with Laravel and Flutter."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^3.0.0
+  riverpod_annotation: ^3.0.0
+
+  # Navigation & Networking
+  go_router: ^13.0.0
+  dio: ^5.4.0
+
+  # Security
+  flutter_secure_storage: ^9.0.0
+
+  # Utilities
+  freezed_annotation: ^3.0.0 # Must be 3.0.0 for Riverpod 3
+  json_annotation: ^4.8.0
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Code Generation
+  build_runner: ^2.4.8
+  riverpod_generator: ^3.0.0
+  freezed: ^3.0.0 # Must match the annotation version
+  json_serializable: ^6.7.0
+
+  # Linting
+  riverpod_lint: ^3.0.3
+  flutter_lints: ^6.0.0
+
+# This section ensures that all generators use the modern build engine
+# dependency_overrides:
+#   build: ^4.0.0
+#   source_gen: ^1.5.0
+#   analyzer: ^6.4.1
+
+flutter:
+  uses-material-design: true
