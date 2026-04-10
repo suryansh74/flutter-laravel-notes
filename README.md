@@ -57,11 +57,14 @@ Open lib/src/shared/network/dio_client.dart and update the baseUrl with the IP a
 
 Dart
 baseUrl: '[http://192.168.](http://192.168.)x.x:8000/api', // Replace with your actual IP
+
 Install & Run:
 
 Bash
 flutter pub get
+
 dart run build_runner build --delete-conflicting-outputs
+
 flutter run
 
 ---
