@@ -65,15 +65,3 @@ dart run build_runner build --delete-conflicting-outputs
 flutter run
 
 ---
-
-### 2. Pushing to GitHub Like a Professional
-
-Professionals don't just dump code into a repo; they make sure their history is clean and they aren't uploading secret files (like `.env`) or massive cache folders.
-
-Open your terminal at the **very root** of your project (the folder holding both the Laravel and Flutter folders) and run these steps:
-
-#### Step 1: Initialize Git
-
-```bash
-git init
-```
