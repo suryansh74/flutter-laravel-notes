@@ -63,8 +63,10 @@ Install & Run:
 Bash
 flutter pub get
 
+Bash
 dart run build_runner build --delete-conflicting-outputs
 
+Bash
 flutter run
 
 ---
