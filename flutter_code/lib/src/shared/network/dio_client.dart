@@ -8,9 +8,9 @@ part 'dio_client.g.dart';
 Dio dio(Ref ref) {
   final dio = Dio(
     BaseOptions(
-      // For physical Android device, use your Computer's Local IP (e.g. 192.168.1.x)
+      // For physical Android device, use your Computer's Local IP (e.g. 192.168.x.x)
       // Make sure your phone and PC are on the same Wi-Fi!
-      baseUrl: 'http://192.168.29.156:8000/api',
+      baseUrl: 'http://192.168.x.x:8000/api',
       headers: {'Accept': 'application/json'},
     ),
   );
