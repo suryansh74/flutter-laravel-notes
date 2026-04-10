@@ -13,7 +13,7 @@ A complete, full-stack mobile application for managing notes. Built with a moder
 ## 🛠️ Tech Stack
 
 - **Frontend:** Flutter, Riverpod, Dio, Freezed/JsonSerializable
-- **Backend:** Laravel 11, Sanctum, SQLite
+- **Backend:** Laravel 13, Sanctum, SQLite
 
 ---
 
