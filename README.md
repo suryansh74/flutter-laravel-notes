@@ -1,67 +1,63 @@
-# Full-Stack Notes App (Flutter + Laravel)
+# Flutter Laravel Notes
 
-A complete, full-stack mobile application for managing notes. Built with a modern Flutter frontend and a secure Laravel API backend.
-
-## ✨ Features
-
-- **Authentication:** Secure login and registration using Laravel Sanctum and Flutter Secure Storage.
-- **CRUD Operations:** Create, Read, Update, and Delete notes.
-- **Modern State Management:** Uses Riverpod 3.0 and Code Generation for robust, predictable state.
-- **Network Interceptors:** Automated Bearer token injection using Dio.
-- **Local Database:** Pre-configured SQLite database for instant setup.
-
-## 🛠️ Tech Stack
-
-- **Frontend:** Flutter, Riverpod, Dio, Freezed/JsonSerializable
-- **Backend:** Laravel 13, Sanctum, SQLite
+Welcome to the **Flutter Laravel Notes** repository! This repository contains notes and examples for integrating **Flutter** applications with a **Laravel** backend.
 
 ---
 
-## 🚀 Getting Started
+## 📚 Table of Contents
 
-### 1. Find Your Local IP Address (For Physical Devices)
-
-If you are running the app on a physical Android/iOS device, your phone needs to know your computer's local Wi-Fi IP address to connect to the backend.
-
-Open a terminal and run:
-
-- **Linux:** `hostname -I`
-- **Mac:** `ifconfig | grep "inet " | grep -Fv 127.0.0.1`
-- **Windows:** `ipconfig` (Look for IPv4 Address)
-
-_Take note of this IP address (e.g., `192.168.x.x`)._
-
-### 2. Backend Setup (Laravel)
-
-Navigate into the backend directory and set up the API:
-
-```bash
-cd notes-api
-cp .env.example .env
-composer install
-php artisan key:generate
-php artisan migrate --seed
-```
-
-Start the Server:
-To allow your mobile device to connect, you must start the server on 0.0.0.0:
-
-Bash
-php artisan serve --host=0.0.0.0 --port=8000 3. Frontend Setup (Flutter)
-Navigate into the Flutter directory:
-
-Bash
-cd flutter_code
-Configure the Network:
-Open lib/src/shared/network/dio_client.dart and update the baseUrl with the IP address you found in Step 1.
-
-Dart
-baseUrl: '[http://192.168.](http://192.168.)x.x:8000/api', // Replace with your actual IP
-Install & Run:
-
-Bash
-flutter pub get
-dart run build_runner build --delete-conflicting-outputs
-flutter run
+1. [Getting Started](#getting-started)
+2. [Setup](#setup)
+3. [Usage](#usage)
+4. [Contributing](#contributing)
+5. [License](#license)
 
 ---
+
+## Getting Started
+
+To get started with this repository, you need to have **Flutter** and **Laravel** installed on your machine. Make sure to check their official documentation for installation instructions.
+
+## Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/suryansh74/flutter-laravel-notes.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd flutter-laravel-notes
+   ```
+3. Install the necessary dependencies:
+   ```bash
+   flutter pub get
+   ```
+
+---
+
+## Usage
+
+Here you can find various examples of using **Flutter** with a **Laravel** backend. Each example is organized into different folders. Follow the README files in each folder for specific instructions.
+
+## 🛠️ Contributing
+
+We welcome contributions to this repository! Here’s how you can help:
+- Fork the repository
+- Create a new feature branch (`git checkout -b feature/AmazingFeature`)
+- Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+- Push to the branch (`git push origin feature/AmazingFeature`)
+- Open a pull request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+---
+
+## Badges
+
+[![Build Status](https://img.shields.io/travis/suryansh74/flutter-laravel-notes/master.svg)](https://travis-ci.org/suryansh74/flutter-laravel-notes) [![Open Issues](https://img.shields.io/github/issues/suryansh74/flutter-laravel-notes.svg)](https://github.com/suryansh74/flutter-laravel-notes/issues)
+
+---
+
+Feel free to reach out for any help or suggestions!
