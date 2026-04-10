@@ -41,13 +41,12 @@ cp .env.example .env
 composer install
 php artisan key:generate
 php artisan migrate --seed
-```
-
 Start the Server:
 To allow your mobile device to connect, you must start the server on 0.0.0.0:
 
 Bash
-php artisan serve --host=0.0.0.0 --port=8000 3. Frontend Setup (Flutter)
+php artisan serve --host=0.0.0.0 --port=8000
+3. Frontend Setup (Flutter)
 Navigate into the Flutter directory:
 
 Bash
@@ -56,17 +55,10 @@ Configure the Network:
 Open lib/src/shared/network/dio_client.dart and update the baseUrl with the IP address you found in Step 1.
 
 Dart
-baseUrl: '[http://192.168.](http://192.168.)x.x:8000/api', // Replace with your actual IP
-
+baseUrl: 'http://192.168.x.x:8000/api', // Replace with your actual IP
 Install & Run:
 
 Bash
 flutter pub get
-
-Bash
 dart run build_runner build --delete-conflicting-outputs
-
-Bash
 flutter run
-
----
